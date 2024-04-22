@@ -31,6 +31,7 @@ font-size: 2rem;
 h2 {
 background: linear-gradient(135deg, #aa5f50 0%, #e68571 100%);
 background-clip: text;
+font-size: 15px;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;}
 `;
@@ -51,6 +52,21 @@ p {
     color: ${colors.TEXT_BLACK};
     font-weight: 500;
 }
+
+@media (max-width: 768px){ 
+display: ${(props) => (props.showMenuBurger ? 'inline-grid' : 'none')};
+position: absolute;
+top: 100px;
+background: ${colors.TEXT_WHITE};
+box-shadow: ${colors.BOX_SHADOW};
+padding: 10px 0 20px 0;
+width: 100%;
+left: 0;
+}
+
+a {
+    padding: 10px 20px;
+}
 `;
 
 export const button = styled.button`
@@ -69,4 +85,19 @@ cursor: pointer;
 width: 50%;
 margin: 5px 10px 0 10px;
 }
+`;
+
+export const ContainerBurger = styled.div`
+display: none;
+
+@media (max-width: 768px){ 
+display: block;
+}
+`;
+
+export const BurgerMenu = styled.div`
+width: 35px;
+height: 2px;
+background-color: ${colors.TEXT_BLACK};
+margin: 6px 0;
 `;
