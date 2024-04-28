@@ -1,22 +1,16 @@
-import './App.css';
-import Navbar from './components/Navbar';
-import Container from './components/Container/Container';
-
-
+import "./App.css";
+import AboutMe from "./components/AboutMe/AboutMe";
+import Container from "./components/Container/Container";
+import Navbar from "./components/Navbar";
 
 
 function App() {
   return (
     <>
-    <Navbar />
-    <Container>
-      <h1>valeria</h1>
-      <h1>valeria</h1>
-      <h1>valeria</h1>
-      <h1>valeria</h1>
-      <h1>valeria</h1>
-    </Container>
-
+      <Navbar />
+      <Container>
+        <AboutMe />
+      </Container>
     </>
   );
 }
