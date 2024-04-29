@@ -13,6 +13,7 @@ padding: 50px 0;
 export const Title = styled.h2`
 text-align: center;
 font-size: 30px;
+color: #aa5f50;
 `;
 
 export const ContainerForm = styled.div`
@@ -30,18 +31,19 @@ box-sizing: border-box;
 export const InputForm = styled.input`
 padding: 10px;
 border-radius: 6px;
-border: 2px solid #4c526838;
+border: 2px solid #e68571;
 background-color: transparent;
 font-size: 16px;
 display: block;
 width: 100%;
 margin-bottom: 15px;
+color: #e68571;
 `;
 
 export const TextArea = styled.textarea`
 padding: 10px;
 border-radius: 6px;
-border: 2px solid #4c526838;
+border: 2px solid #e68571;
 background-color: transparent;
 font-size: 16px;
 display: block;
@@ -52,7 +54,7 @@ margin-bottom: 15px;
 export const Button = styled.button`
 color: ${colors.TEXT_WHITE};
 box-shadow: ${colors.BOX_SHADOW};
-background: linear-gradient(135deg, #6699ff 0%, #ff3366 100%);
+background: linear-gradient(135deg, #aa5f50 0%, #e68571 100%);
 padding: 10px 40px;
 border-radius: 999px;
 border: none;

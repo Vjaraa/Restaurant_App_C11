@@ -53,7 +53,7 @@ export const ContentProductsImage = styled.div`
 
 
 .columna img {
-  max-width: 100%; /* Ajusta el tamaño máximo de la imagen al contenedor */
+  max-width: 240px; /* Ajusta el tamaño máximo de la imagen al contenedor */
   height: auto;
 }
 `;

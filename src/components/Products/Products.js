@@ -9,7 +9,7 @@ const Products = () => {
         <span>
           {" "}
           <br />
-          Platos Especiales
+          Productos Especiales
         </span>
       </S.Title>
       <S.ContentProducts>
@@ -28,7 +28,7 @@ const Products = () => {
             <div className="contenedor">
              
               <div className="columna">
-                <img src="/img/06.jpg" alt="Imagen 2" />
+                <img src="/img/galleta.png" alt="Imagen 2" />
               </div>
             </div>
           </S.ContentProductsImage>
@@ -39,7 +39,7 @@ const Products = () => {
             <div className="contenedor">
              
               <div className="columna">
-                <img src="/img/07.jpg" alt="Imagen 3" />
+                <img src="/img/cupcake.png" alt="Imagen 3" />
               </div>
             </div>
           </S.ContentProductsImage>

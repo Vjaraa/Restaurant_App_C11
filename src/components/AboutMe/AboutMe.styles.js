@@ -61,7 +61,7 @@ export const Title = styled.h1`
 
 export const DescriptionText = styled.div`
   font-size: 16px;
-  color: red;
+  color: #e68571;
   padding-right: 100px;
 
   @media (max-width: 768px) {

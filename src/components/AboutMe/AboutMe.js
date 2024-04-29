@@ -12,7 +12,7 @@ const AboutMe = () => {
             <p>de su exquisita gastronomía</p>
           </S.Title>
           <S.DescriptionText>
-          lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+         Ubicados a pasos del metro Escuela militar, se encuentra Dolce Rosa, un lugar para compartir con tu persona especial.
           </S.DescriptionText>
           <S.ContainerIcons>
           </S.ContainerIcons>
