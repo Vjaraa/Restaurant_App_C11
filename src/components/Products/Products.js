@@ -15,19 +15,37 @@ const Products = () => {
       <S.ContentProducts>
         <S.TitleProducts>
           <S.ContentProductsImage>
-          <div className="contenedor">
-      <div className="columna">
-        <img src="/img/torta.jpg" alt="Imagen 1" />
-      </div>
-      <div className="columna">
-        <img src="/img/06.jpg" alt="Imagen 2" />
-      </div>
-      <div className="columna">
-        <img src="/img/07.jpg" alt="Imagen 3" />
-      </div>
-    </div>
+            <div className="contenedor">
+              <div className="columna">
+                <img src="/img/torta.jpg" alt="Imagen 1" />
+              </div>
+              </div>
           </S.ContentProductsImage>
         </S.TitleProducts>
+
+        <S.TitleProducts>
+          <S.ContentProductsImage>
+            <div className="contenedor">
+             
+              <div className="columna">
+                <img src="/img/06.jpg" alt="Imagen 2" />
+              </div>
+            </div>
+          </S.ContentProductsImage>
+        </S.TitleProducts>
+
+        <S.TitleProducts>
+          <S.ContentProductsImage>
+            <div className="contenedor">
+             
+              <div className="columna">
+                <img src="/img/07.jpg" alt="Imagen 3" />
+              </div>
+            </div>
+          </S.ContentProductsImage>
+        </S.TitleProducts>
+
+
       </S.ContentProducts>
     </S.ContainerProducts>
   );
