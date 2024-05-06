@@ -2,10 +2,12 @@ import styled from "styled-components";
 import { colors } from "../../styles/colors";
 
 export const ContainerContact = styled.div`
-padding: 50px 0;
+padding: 50px 100px;
+
 
 @media (max-width: 768px) {
     padding: 20px 0px;
+    
   }
 
 `;
@@ -64,4 +66,64 @@ cursor: pointer;
 width: 150px;
 text-transform: uppercase;
 `;
+
+export const TitleContact = styled.h1`
+  margin: 0;
+  padding: 50px 100px;
+  text-align: center;
+
+  p {
+    margin: 0;
+  }
+
+  p:nth-child(1) {
+    font-size: 40px;
+    background: linear-gradient(135deg, #aa5f50 0%, #e68571 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 30px;
+  }
+
+  p:nth-child(2) {
+    font-size: 20px;
+    background-color: black;
+    background-clip: text;
+    padding-bottom: 30px;
+  }
+
+  p:nth-child(3) {
+    font-size: 20px;
+    background-color: black;
+    background-clip: text;
+    padding-bottom: 30px;
+    color: #aa5f50;
+  }
+
+  p:nth-child(4) {
+    font-size: 20px;
+    background-color: black;
+    background-clip: text;
+    padding-bottom: 30px;
+    color: #aa5f50;
+  }
+
+  p:nth-child(5) {
+    font-size: 20px;
+    background-color: black;
+    background-clip: text;
+    padding-bottom: 30px;
+    color: #e68571;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0;
+    text-align: center;
+
+    p:nth-child(2) {
+      font-size: 2rem;
+    }
+  }
+`;
+
 

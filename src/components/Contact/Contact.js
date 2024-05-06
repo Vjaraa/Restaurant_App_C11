@@ -1,10 +1,18 @@
 import React from 'react';
 import * as S from "./Contact.styles";
 
+
 const Contact = () => {
   return (
     <S.ContainerContact>
-      <S.Title>Contáctanos</S.Title>
+      <S.TitleContact>
+            <p>Contáctanos</p>
+            <p>A partir de tu contacto, nos comunicaremos contigo para revisar fechas y disponibilidad de horarios.</p>
+            <p>+569 22258729</p>
+            <p>contacto@dolcerosa.com</p>
+            <p>Cruz del Sur #1220, Las Condes, Santiago de Chile</p>
+          </S.TitleContact>
+      <S.Title>Reserva con nosotros</S.Title>
       <S.ContainerForm>
         <S.Form>
           <S.InputForm placeholder='Tú nombre' type='text' name='name' />
