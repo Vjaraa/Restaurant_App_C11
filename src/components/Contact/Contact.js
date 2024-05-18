@@ -9,8 +9,8 @@ const Contact = () => {
     message: "",
   });
 
-  const [emptyImputs, setEmptyImputs] = useState(false);
   const [successSendForm, setSuccessSendForm] = useState(false);
+  const [errorSendForm, setErrorSendForm] = useState(false);
 
   const form = useRef();
 
@@ -24,9 +24,11 @@ const Contact = () => {
     e.preventDefault();
 
     // validate form
-    if ( contactDates.name === "" || contactDates.email === "" || contactDates.message === "" ) 
-      {
-      setEmptyImputs(true);
+    if (
+      contactDates.name === "" ||
+      contactDates.email === "" ||
+      contactDates.message === ""
+    ) {
     } else {
       emailjs
         .sendForm(
@@ -40,7 +42,7 @@ const Contact = () => {
             setSuccessSendForm(true);
           },
           (error) => {
-            console.log("ERROR");
+            setErrorSendForm(true);
           }
         );
     }
@@ -62,39 +64,42 @@ const Contact = () => {
       </S.TitleContact>
       <S.Title>Reserva con nosotros</S.Title>
       <S.ContainerForm>
-        <S.Form onSubmit={onSubmit} ref={form}>
-          <S.InputForm
-            placeholder="Tú nombre"
-            type="text"
-            name="name"
-            onChange={(e) =>
-              setContactDates({ ...contactDates, name: e.target.value })
-            }
-            value={contactDates.name}
-          />
-          <S.InputForm
-            placeholder="Tú email"
-            type="email"
-            name="email"
-            onChange={(e) =>
-              setContactDates({ ...contactDates, email: e.target.value })
-            }
-            value={contactDates.email}
-          />
-          <S.TextArea
-            placeholder="Escribe tu mensaje (Para reservas, especificar fecha y hora deseada)"
-            name="message"
-            onChange={(e) =>
-              setContactDates({ ...contactDates, message: e.target.value })
-            }
-            value={contactDates.message}
-          />
-          <S.Button type="submit">Enviar</S.Button>
-        </S.Form>
-        {emptyImputs && (
-          <p>You should fill all the inputs and accept the terms</p>
+        {successSendForm ? (
+          <S.SucessMessage>El formulario ha sido enviado correctamente</S.SucessMessage>
+        ) : (
+          <S.Form onSubmit={onSubmit} ref={form}>
+            <S.InputForm
+              placeholder="Tú nombre"
+              type="text"
+              name="name"
+              onChange={(e) =>
+                setContactDates({ ...contactDates, name: e.target.value })
+              }
+              value={contactDates.name}
+            />
+            <S.InputForm
+              placeholder="Tú email"
+              type="email"
+              name="email"
+              onChange={(e) =>
+                setContactDates({ ...contactDates, email: e.target.value })
+              }
+              value={contactDates.email}
+            />
+            <S.TextArea
+              placeholder="Escribe tu mensaje (Para reservas, especificar fecha y hora deseada)"
+              name="message"
+              onChange={(e) =>
+                setContactDates({ ...contactDates, message: e.target.value })
+              }
+              value={contactDates.message}
+            />
+            <S.Button type="submit">Enviar</S.Button>
+          </S.Form>
         )}
+        {errorSendForm && (<S.TextError>Se ha producido un error</S.TextError>)}
       </S.ContainerForm>
+      
     </S.ContainerContact>
   );
 };

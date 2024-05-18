@@ -126,4 +126,12 @@ export const TitleContact = styled.h1`
   }
 `;
 
+export const TextError = styled.p`
+color: red;
+font-size: 15px;
+`;
 
+export const SucessMessage = styled.p`
+color: #aa5f50;
+font-size: 15px;
+`;
