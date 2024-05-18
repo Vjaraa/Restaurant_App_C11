@@ -51,7 +51,7 @@ const Contact = () => {
   };
 
   return (
-    <S.ContainerContact>
+    <S.ContainerContact> 
       <S.TitleContact>
         <p>Contáctanos</p>
         <p>

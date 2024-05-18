@@ -4,6 +4,8 @@ import Contact from "./components/Contact/Contact";
 import Container from "./components/Container/Container";
 import Navbar from "./components/Navbar";
 import Products from "./components/Products/Products";
+import Footer from "./components/Footer/Footer";
+
 
 
 
@@ -16,6 +18,7 @@ function App() {
         <Products />
         <Contact />
       </Container>
+      <Footer />
     </>
   );
 }
