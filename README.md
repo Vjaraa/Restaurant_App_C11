@@ -2,17 +2,17 @@
 
 ## **ÍNDICE**
 
-[1. Intro](#1-intro)
-[2. Prototipo](#2-prototipo)
-[3. Requisitos](#3-requisitos-y-entregables)
-[4. Criterios de evaluación](#4-criterios-de-evaluaci%C3%B3n)
+*[1. Intro](#1-intro)
+*[2. Prototipo](#2-prototipo)
+*[3. Requisitos](#3-requisitos-y-entregables)
+*[4. Criterios de evaluación](#4-criterios-de-evaluaci%C3%B3n)
 
 ## 1. Intro
 Se desarrolla el cuarto proyecto del Bootcamp, llamado "Restaurant APP". 
 El proyecto se enfocó en la creación de una página web para un restaurant, utilizando React. La página web incluye información principal del restaurante, formulario de contacto y una sección de datos de ubicación y correo electrónico.
 
 ## 2. Prototipo
-* 
+
 ![](./public/img/Prototipo_restaurantapp.jpg)
 
 ## 3. Requisitos y entregables
